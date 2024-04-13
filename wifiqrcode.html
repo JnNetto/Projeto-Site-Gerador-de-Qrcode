@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code de Configuração Wi-Fi</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
+    <style>
+        #qrcode {
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Configuração de Rede Wi-Fi</legend>
+        <div>
+            <label for="ssid">SSID (nome da rede):</label>
+            <input type="text" id="ssid" />
+        </div>
+        <div>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" />
+        </div>
+        <div>
+            <label for="encryption">Tipo de criptografia:</label>
+            <select id="encryption">
+                <option value="WPA">WPA</option>
+                <option value="WEP">WEP</option>
+                <option value="nopass">Sem senha (aberta)</option>
+            </select>
+        </div>
+        <button id="generateQR">Gerar QR Code</button>
+    </fieldset>
+
+    <!-- Div para mostrar o QR code -->
+    <div id="qrcode"></div>
+
+    <script>
+        document.getElementById('generateQR').addEventListener('click', function() {
+    var ssid = document.getElementById('ssid').value;
+    var password = document.getElementById('password').value;
+    var encryption = document.getElementById('encryption').value;
+
+    var wifiConfig = `WIFI:S:${ssid};T:${encryption};P:${password};;`;
+
+    // Cria o QR code
+    var qrcodeElement = document.getElementById("qrcode");
+    qrcodeElement.innerHTML = "";
+
+    var qr = qrcode(0, 'H');
+    qr.addData(wifiConfig);
+    qr.make();
+
+    qrcodeElement.innerHTML = qr.createImgTag();
+});
+
+    </script>
+</body>
+</html>

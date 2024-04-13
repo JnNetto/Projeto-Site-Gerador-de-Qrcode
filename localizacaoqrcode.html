@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapa e QR Code</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+        #qrcode {
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="qrcode"></div>
+
+    <script>
+        // Inicializa o mapa
+var map = L.map('map').setView([0, 0], 2);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+}).addTo(map);
+
+// Adiciona um evento de clique no mapa
+function onMapClick(e) {
+    var latitude = e.latlng.lat;
+    var longitude = e.latlng.lng;
+    var url = "https://www.google.com/maps/search/?api=1&query=" + latitude + "," + longitude;
+
+    // Cria o QR code
+    var qrcodeElement = document.getElementById("qrcode");
+    qrcodeElement.innerHTML = "";
+
+    var qr = qrcode(0, 'H');
+    qr.addData(url);
+    qr.make();
+
+    qrcodeElement.innerHTML = qr.createImgTag();
+}
+
+map.on('click', onMapClick);
+
+    </script>
+</body>
+</html>

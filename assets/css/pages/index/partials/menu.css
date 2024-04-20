@@ -1,0 +1,25 @@
+.submenu {
+    position: relative;
+  }
+  
+  .submenu-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #062e52;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .submenu-options li {
+    list-style: none;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .submenu:hover .submenu-options {
+    display: block;
+  }
+  

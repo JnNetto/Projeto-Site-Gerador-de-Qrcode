@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR Code Generator</title>
-    <link rel="stylesheet" href="../Site3/assets/css/pages/email/emial.css" />
+    <link rel="stylesheet" href="./assets/css/pages/email/email.css" />
     <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
   </head>
   <body>
@@ -37,20 +37,15 @@
         </div>
       <section>
         <div class = "Gerador">
-        <!--H1 text-->
         <h2>Gerador de QR Code para E-mail</h2>
-        <!--Texto para inserir o campo do email-->
         <label for="inputEmail">Insira o e-mail de destino:</label>
-        <!--Input do email-->
         <input type="email" id="inputEmail" placeholder="example@gmail.com" />
-        <!--Botão-->
         <button id="generateQR">Gerar QR Code</button>
-        <!--Mostra o QRCode na tela -->
         <div id="qrcode">QRCODE APARECE AQUI</div>
         </div>
       </section>
     </main>
 
-    <script src="indexJS.js"></script>
+    <script src="./assets/js/email/email.js"></script>
   </body>
 </html>

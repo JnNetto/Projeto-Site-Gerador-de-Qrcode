@@ -1,0 +1,124 @@
+:root {
+  --cor1: #012840;
+  --cor2: #033159;
+  --cor9: #062e52;
+  --cor3: #657d8c;
+  --cor4: #c1d0d9;
+  --cor5: #e4f0f2;
+  --cor7: #f2f2f2;
+  --cor8: #79818c;
+}
+
+body {
+  background-color: var(--cor9);
+  margin: auto;
+  padding: 0;
+}
+
+header {
+  font-family: Arial, sans-serif;
+  background-color: var(--cor1);
+  color: var(--cor7);
+  padding: 1px;
+  text-align: left;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 3px black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 2px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: var(--cor7);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+main {
+  background-color: var(--cor3);
+  color: var(--cor7);
+  width: 800px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+main h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+main p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+
+section.quadros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: var(--cor7);
+  margin: 20px;
+}
+
+.quadro {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  background-color: var(--cor1);
+  color: var(--cor7);
+  width: 120px;
+  height: 90px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 20px;
+  box-shadow: 4px 4px 4px black;
+  padding: 10px;
+}
+.quadro img {
+  width: 60px; /* Ajuste o tamanho conforme necessário */
+  height: 60px;
+  display: flex; /* Para centralizar a imagem dentro do quadro */
+  margin: auto;
+}
+.quadro:hover {
+  background-color: var(--cor2);
+  color: var(--cor7);
+}
+
+footer {
+  background-color: #49728c;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}

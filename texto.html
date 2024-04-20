@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Copiar para Área de Transferência</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
+    <link rel="stylesheet" href="texto.css" />
+  </head>
+  <body>
+    <header>
+      <h2>QRConnect</h2>
+      <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      </header>
+    <main>
+      <div class="content">
+        <div class="text">
+          <h2>Instruções</h2>
+          <h3>Passo 1</h3>
+          <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            sollicitudin ligula nec justo facilisis, nec faucibus odio
+            imperdiet.
+          </p>
+
+          <h3>Passo 2</h3>
+          <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            sollicitudin ligula nec justo facilisis, nec faucibus odio
+            imperdiet.
+          </p>
+        </div>
+    </header>
+    <fieldset>
+      <legend>Gerador de QR Code</legend>
+      <div>
+        <label for="textInput">Insira o texto:</label>
+        <input type="text" id="textInput" />
+      </div>
+      <button id="generateQR">Gerar QR Code</button>
+    </fieldset>
+
+    <!-- Div para mostrar o QR code -->
+    <div id="qrcode"></div>
+
+    <script src="indexJS.js"></script>
+  </body>
+</html>

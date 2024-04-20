@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code de Configuração Wi-Fi</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
+    <link rel="stylesheet" href="wifi.css" />
+  </head>
+  <body>
+    <header>
+      <h2>QRConnect</h2>
+      <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      </header>
+    <main>
+      <div class="content">
+        <div class="text">
+          <h2>Instruções</h2>
+          <h3>Passo 1</h3>
+          <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            sollicitudin ligula nec justo facilisis, nec faucibus odio
+            imperdiet.
+          </p>
+          <h3>Passo 2</h3>
+          <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            sollicitudin ligula nec justo facilisis, nec faucibus odio
+            imperdiet.
+          </p>
+          <h3>Passo 3</h3>
+          <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            sollicitudin ligula nec justo facilisis, nec faucibus odio
+            imperdiet.
+          </p>
+          <h3>Passo 4</h3>
+          <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            sollicitudin ligula nec justo facilisis, nec faucibus odio
+            imperdiet.
+          </p>
+        </div>
+    <fieldset>
+      <legend>Configuração de Rede Wi-Fi</legend>
+      <div>
+        <label for="ssid">SSID (nome da rede):</label>
+        <input type="text" id="ssid" />
+      </div>
+      <div>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" />
+      </div>
+      <div>
+        <label for="encryption">Tipo de criptografia:</label>
+        <select id="encryption">
+          <option value="WPA">WPA</option>
+          <option value="WEP">WEP</option>
+          <option value="nopass">Sem senha (aberta)</option>
+        </select>
+      </div>
+      <button id="generateQR">Gerar QR Code</button>
+    </fieldset>
+
+    <!-- Div para mostrar o QR code -->
+    <div id="qrcode"></div>
+
+    <script src="indexJS.js"></script>
+  </body>
+</html>

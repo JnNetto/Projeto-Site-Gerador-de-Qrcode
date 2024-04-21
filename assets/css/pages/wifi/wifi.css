@@ -7,19 +7,50 @@
   --cor7: #f2f2f2;
   --cor8: #79818c;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: var(--cor5);
 }
 header {
-  background-color: var(--cor1);
+  font-family: Arial, sans-serif;
+  background-color: var(--cor2);
   color: var(--cor7);
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
+  padding: auto;
+  text-align: left;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 3px black;
+  text-shadow: 2px 2px 2px black;
+  margin: 0;
+}
+header h2 {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+nav ul {
+  list-style-type: none;
+  padding-bottom: 6px;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 13px;
+}
+
+nav ul li a {
+  color: var(--cor7);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
 }
 main {
-  padding: 20px;
+  padding: 10px;
 }
 main h2 {
   font-family: "Times New Roman", Times, serif;
@@ -33,12 +64,9 @@ main p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
 }
-video {
+img {
   max-width: 100%;
-}
-
-div.gerador {
-  max-width: 100%;
+  height: auto;
 }
 .content {
   display: flex;
@@ -49,7 +77,47 @@ div.gerador {
   flex: 1;
   padding-right: 20px;
 }
+#container {
+  background-color: var(--cor2); /* Cor de fundo */
+  padding: 20px;
+  border-radius: 10px; /* Bordas arredondadas */
+  width: 300px; /* Largura do container */
+  margin: 0 auto; /* Centralizando na página */
+}
 
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f2f2f2;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--cor7);
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  width: calc(100% - 20px); /* Largura ajustada para caber no container */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--cor8); /* Cor de fundo do botão */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Cor de fundo do botão ao passar o mouse */
+}
 #qrcode {
   margin-top: 20px;
   display: block;

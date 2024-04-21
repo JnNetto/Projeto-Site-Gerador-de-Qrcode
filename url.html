@@ -12,36 +12,30 @@
       <h2>QRConnect</h2>
       <nav>
         <ul>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-      </header>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <div class="content">
         <div class="text">
           <h2>Instruções</h2>
           <h3>Passo 1</h3>
           <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            sollicitudin ligula nec justo facilisis, nec faucibus odio
-            imperdiet.
-          </p>
+          <p>Insira a URL no espaço "Enter URL"</p>
 
           <h3>Passo 2</h3>
           <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            sollicitudin ligula nec justo facilisis, nec faucibus odio
-            imperdiet.
-          </p>
+          <p>Clique no botão "Gerar QR Code" escaneie o QrCode</p>
         </div>
-    </header>
+      </div>
+    </main>
     <div class="container">
-      <h1>QR Code Generator</h1>
+      <h2 id="quadrado">QR Code Generator</h2>
       <div>
-        <label for="input">Input:</label>
+        <label for="input">URL:</label>
         <input type="text" id="input" placeholder="Enter URL" />
-        <button onclick="generateQR()">Generate QR Code</button>
+        <button onclick="generateQR()">Gerar QR Code</button>
       </div>
       <div id="qrcode"></div>
     </div>

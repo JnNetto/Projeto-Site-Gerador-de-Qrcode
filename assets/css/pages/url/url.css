@@ -68,13 +68,13 @@ img {
   height: auto;
 }
 .container {
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 20px;
   width: 450px;
   margin: 90px auto;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /**/
   justify-content: center;
   align-items: center;
   background-color: var(--cor2);
@@ -114,7 +114,9 @@ button:hover {
 }
 
 #qrcode {
-  margin: 0 auto;
-
-  margin-top: 20px;
+  width: 300px;
+  position: fixed; 
+  bottom: 0; 
+  left: 44.24%; 
+  margin-left: 20px; 
 }

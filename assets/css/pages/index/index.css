@@ -106,9 +106,9 @@ h3 {
   padding: 10px;
 }
 .quadro img {
-  width: 60px; /* Ajuste o tamanho conforme necessário */
+  width: 60px; 
   height: 60px;
-  display: flex; /* Para centralizar a imagem dentro do quadro */
+  display: flex;
   margin: auto;
 }
 .quadro:hover {
@@ -117,11 +117,14 @@ h3 {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: var(--cor2);
   color: var(--cor7);
   text-align: center;
   padding: 5px;
-  margin-top: 58px;
 }
 
 footer p {

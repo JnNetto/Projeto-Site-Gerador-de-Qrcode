@@ -1,77 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code do vCard</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
+    <link rel="stylesheet" href="../../assets/css/pages/vrcard/vrCard.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/global/free-qr-code-1851030-1569017.webp"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QR Code do vCard</title>
-  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
-  <link rel="stylesheet" href="../../assets/css/pages/vrcard/vrCard.css" />
-  <link rel="shortcut icon" href="./assets/img/global/free-qr-code-1851030-1569017.webp" type="image/x-icon" />
-</head>
+  <body>
+    <header>
+      <h2>QRConnect</h2>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="subBody">
+      <main>
+        <div class="content">
+          <div class="text">
+            <h2>Instruções</h2>
+            <h3>Passo 1</h3>
+            <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
+            <p>Digite os dados abaixo corretamente.</p>
 
-<body>
-  <header>
-    <h2>QRConnect</h2>
-    <nav>
-      <ul>
-        <li><a href="../../index.html">Home</a></li>
-      </ul>
-  </header>
-  <section id="subBody">
-    <main>
-      <div class="content">
-        <div class="text">
-          <h2>Instruções</h2>
-          <h3>Passo 1</h3>
-          <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
-          <p>
-            Digite os dados abaixo corretamente.
-          </p>
-  
-          <h3>Passo 2</h3>
-          <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
-          <p>
-            Clique no botão "Gerar QrCode" e escaneie o seu Qrcode.
-          </p>
+            <h3>Passo 2</h3>
+            <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
+            <p>Clique no botão "Gerar QrCode" e escaneie o seu Qrcode.</p>
+          </div>
         </div>
-    </main>
-    <fieldset>
-      <div>
-        <label for="cardInfoEl">CardInfo:</label>
-        <input type="text" id="cardInfoEl" />
-      </div>
-      <div>
-        <label for="emailEl">E-mail:</label>
-        <input type="text" id="emailEl" />
-      </div>
-      <div>
-        <label for="nameEl">Nome:</label>
-        <input type="text" id="nameEl" />
-      </div>
-      <div>
-        <label for="orgEl">Empresa:</label>
-        <input type="text" id="orgEl" />
-      </div>
-      <div>
-        <label for="titleEl">Cargo:</label>
-        <input type="text" id="titleEl" />
-      </div>
-      <div>
-        <label for="telEl">Telefone:</label>
-        <input type="text" id="telEl" />
-      </div>
-      <div>
-        <label for="addressEl">Endereço:</label>
-        <input type="text" id="addressEl" />
-      </div>
-  
-      <button id="downloadEl">Gerar Qrcode</button>
-    </fieldset>
-    <div id="qrcode"></div>
-  </section>
+      </main>
+      <fieldset>
+        <div>
+          <label for="emailEl">E-mail:</label>
+          <input type="text" id="emailEl" />
+        </div>
+        <div>
+          <label for="nameEl">Nome:</label>
+          <input type="text" id="nameEl" />
+        </div>
+        <div>
+          <label for="orgEl">Empresa:</label>
+          <input type="text" id="orgEl" />
+        </div>
+        <div>
+          <label for="titleEl">Cargo:</label>
+          <input type="text" id="titleEl" />
+        </div>
+        <div>
+          <label for="telEl">Telefone:</label>
+          <input type="text" id="telEl" />
+        </div>
+        <div>
+          <label for="addressEl">Endereço:</label>
+          <input type="text" id="addressEl" />
+        </div>
 
-  <script src="../../assets/js/vrcard/vrcard.js"></script>
-</body>
+        <button id="downloadEl">Gerar Qrcode</button>
+      </fieldset>
+      <div id="qrcode"></div>
+    </section>
 
+    <script src="../../assets/js/vrcard/vrcard.js"></script>
+  </body>
 </html>

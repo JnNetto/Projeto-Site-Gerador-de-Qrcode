@@ -14,8 +14,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: var(--cor7);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
 }
 
 #subBody {
@@ -24,13 +24,13 @@ body {
 
 header {
   background-color: var(--cor2);
-  color: var(--cor7);
+  color: #f2790f;
   font-family: Arial, sans-serif;
   padding: auto;
   text-align: left;
   box-sizing: border-box;
-  box-shadow: 3px 3px 3px black;
-  text-shadow: 2px 2px 2px black;
+  box-shadow: 4px 4px 4px black;
+  text-shadow: 3px 3px 3px black;
   margin: 0;
 }
 
@@ -67,7 +67,7 @@ main h2 {
 }
 main h3 {
   font-family: "Times New Roman", Times, serif;
-  color: #012840;
+  color: #f2790f;
 }
 main p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -87,13 +87,15 @@ fieldset {
   background-color: var(--cor2);
   padding: 20px;
   border-radius: 10px;
-  width: 300px; 
+  width: 300px;
   margin: 0 auto;
   margin-top: 50px;
+  height: 160px;
 }
 
 fieldset h2 {
-  color: var(--cor7);
+  color: #f2790f;
+  padding-bottom: 20px;
 }
 
 label[for="textInput"] {
@@ -106,14 +108,14 @@ label {
 }
 
 input[type="text"] {
-  width: calc(100% - 10px); 
+  width: calc(100% - 10px);
   padding: 5px;
   margin-bottom: 10px;
 }
 
 button {
   padding: 10px 20px;
-  background-color: var(--cor8); 
+  background-color: #f2790f;
   color: white;
   border: none;
   border-radius: 5px;
@@ -123,7 +125,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049; 
+  background-color: #45a049;
 }
 
 .text {

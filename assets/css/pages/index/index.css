@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: var(--cor7);
+  background-color: #ffffff;
   margin: auto;
   padding: 0;
 }
@@ -20,12 +20,12 @@ body {
 header {
   font-family: Arial, sans-serif;
   background-color: var(--cor2);
-  color: var(--cor7);
+  color: #f2790f;
   padding: 1px;
   text-align: left;
   box-sizing: border-box;
-  box-shadow: 3px 3px 3px black;
-  text-shadow: 2px 2px 2px black;
+  box-shadow: 4px 4px 4px black;
+  text-shadow: 3px 3px 3px black;
 }
 
 * {
@@ -56,7 +56,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 main {
-  background-color: var(--cor8);
+  background-color: #f2790fd3;
   color: var(--cor7);
   width: 800px;
   height: 200px;
@@ -72,10 +72,12 @@ main {
 main.titulo {
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
+  color: var(--cor2);
 }
 main.explicacao {
   font-family: Arial, Helvetica, sans-serif;
   text-align: right;
+  color: var(--cor2);
 }
 
 section.quadros {
@@ -84,18 +86,20 @@ section.quadros {
   justify-content: center;
   margin-top: 20px;
 }
-h3 {
+#titulo_serv {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: var(--cor7);
+  color: var(--cor2);
   margin: 20px;
+  font-weight: bolder;
 }
 
 .quadro {
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
   font-size: 10px;
   background-color: var(--cor2);
-  color: var(--cor7);
+  color: #f2790f;
   width: 120px;
   height: 90px;
   margin: 10px;
@@ -106,14 +110,14 @@ h3 {
   padding: 10px;
 }
 .quadro img {
-  width: 60px; 
+  width: 60px;
   height: 60px;
   display: flex;
   margin: auto;
 }
 .quadro:hover {
   background-color: var(--cor1);
-  color: var(--cor7);
+  color: #f2790f;
 }
 
 footer {

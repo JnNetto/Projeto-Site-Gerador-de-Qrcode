@@ -1,0 +1,139 @@
+:root {
+  --cor1: #012840;
+  --cor2: #033159;
+  --cor3: #657d8c;
+  --cor4: #c1d0d9;
+  --cor5: #e4f0f2;
+  --cor7: #f2f2f2;
+  --cor8: #79818c;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(#ffffff);
+}
+
+#subBody {
+  display: flex;
+}
+
+header {
+  font-family: Arial, sans-serif;
+  background-color: var(--cor2);
+  color: #f2790f;
+  padding: auto;
+  text-align: left;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 3px black;
+  text-shadow: 3px 3px 3px black;
+  margin: 0;
+}
+header h2 {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+nav ul {
+  list-style-type: none;
+  padding-bottom: 6px;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 13px;
+}
+
+nav ul li a {
+  color: var(--cor7);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+main {
+  padding: 10px;
+}
+main h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #012840;
+}
+main h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: #f2790f;
+}
+main p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.content {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+#container {
+  background-color: var(--cor2);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#container h2 {
+  color: #f2790f;
+  font-size: 15pt;
+  padding: 3px;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--cor7);
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  width: calc(100% - 20px);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f2790f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#qrcode {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}

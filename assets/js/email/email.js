@@ -10,5 +10,5 @@ function generateQRCode(content) {
     var qr = qrcode(0, 'H');
     qr.addData(content);
     qr.make();
-    qrcodeElement.innerHTML = qr.createImgTag();
+    qrcodeElement.innerHTML = qr.createImgTag(7);
 }

@@ -7,13 +7,20 @@
   --cor7: #f2f2f2;
   --cor8: #79818c;
 }
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: var(--cor7);
 }
+
+#subBody{
+  display: flex;
+}
+
 header {
   font-family: Arial, sans-serif;
   background-color: var(--cor2);
@@ -25,11 +32,13 @@ header {
   text-shadow: 2px 2px 2px black;
   margin: 0;
 }
+
 header h2 {
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 2px;
 }
+
 nav ul {
   list-style-type: none;
   padding-bottom: 6px;
@@ -48,27 +57,33 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
 }
+
 main {
   padding: 10px;
 }
+
 main h2 {
   font-family: "Times New Roman", Times, serif;
   color: #012840;
 }
+
 main h3 {
   font-family: "Times New Roman", Times, serif;
   color: #012840;
 }
+
 main p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .container {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 20px;
   width: 450px;
   margin: 90px auto;
@@ -104,6 +119,7 @@ button:hover {
   background-color: #45a049;
 }
 .content {
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
 }
@@ -114,9 +130,7 @@ button:hover {
 }
 
 #qrcode {
-  width: 300px;
   position: fixed; 
-  bottom: 0; 
-  left: 44.24%; 
-  margin-left: 20px; 
+  margin-top: 50px;
+  margin-left: 75px;
 }

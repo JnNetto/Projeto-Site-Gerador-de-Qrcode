@@ -13,5 +13,5 @@ document.getElementById('generateQR').addEventListener('click', function() {
     qr.addData(wifiConfig);
     qr.make();
 
-    qrcodeElement.innerHTML = qr.createImgTag();
+    qrcodeElement.innerHTML = qr.createImgTag(5);
 });

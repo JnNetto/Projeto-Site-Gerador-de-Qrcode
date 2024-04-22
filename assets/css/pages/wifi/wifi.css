@@ -11,10 +11,16 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: Arial, sans-serif;
   background-color: var(--cor5);
 }
+
+#subBody {
+  display: flex;
+}
+
 header {
   font-family: Arial, sans-serif;
   background-color: var(--cor2);
@@ -69,6 +75,7 @@ img {
   height: auto;
 }
 .content {
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
 }
@@ -84,6 +91,7 @@ img {
   border-radius: 10px;
   width: 300px; 
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 #container h2{

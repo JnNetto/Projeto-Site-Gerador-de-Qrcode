@@ -37,7 +37,7 @@ END:VCARD`;
     qr.addData(vcard);
     qr.make();
 
-    qrcodeElement.innerHTML = qr.createImgTag();
+    qrcodeElement.innerHTML = qr.createImgTag(3);
 }
 
 downloadEl.addEventListener('click', makeVCardQRCode);

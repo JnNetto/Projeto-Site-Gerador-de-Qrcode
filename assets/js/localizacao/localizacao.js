@@ -18,7 +18,7 @@ function onMapClick(e) {
     qr.addData(url);
     qr.make();
 
-    qrcodeElement.innerHTML = qr.createImgTag();
+    qrcodeElement.innerHTML = qr.createImgTag(5);
 }
 
 map.on('click', onMapClick);

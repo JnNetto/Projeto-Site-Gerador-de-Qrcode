@@ -61,36 +61,50 @@ nav ul li a:hover {
 main {
   padding: 20px;
 }
+
 main h2 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif/*"Times New Roman", Times, serif*/;
   color: #012840;
 }
+
 main h3 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif/*"Times New Roman", Times, serif*/;
   color: #f2790f;
 }
+
 main p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
 }
-img {
-  max-width: 100%;
-  height: auto;
+
+#passo1 {
+  height: 200px;
+  width: 100%;
+}
+
+#passo2 {
+  height: 500px;
+  width: 100%;
 }
 
 .content {
-  margin-top: 100px;
+  margin-left: 70px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
 }
+
 fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--cor2);
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
   margin: 0 auto;
   margin-top: 50px;
-  height: 160px;
+  height: 500px;
+  width: 450px;
 }
 
 fieldset h2 {
@@ -134,7 +148,7 @@ button:hover {
 }
 
 #qrcode {
-  margin-top: 20px;
+  margin-top: 30px;
   display: block;
   text-align: center;
 }

@@ -53,6 +53,7 @@ nav ul li a:hover {
 
 main {
   width: 500px;
+  height: 420px;
   background-color: var(--cor2);
   padding-top: 40px;
   padding-bottom: 40px;
@@ -111,6 +112,7 @@ button:hover {
 }
 
 #qrcode img {
+  margin-top: 30px;
   max-width: 100%;
   height: 100%;
 }

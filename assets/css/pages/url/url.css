@@ -63,20 +63,20 @@ main {
 }
 
 main h2 {
-  font-family: Arial, Helvetica, sans-serif/*"Times New Roman", Times, serif*/;
+  font-family: Arial, Helvetica, sans-serif /*"Times New Roman", Times, serif*/;
   color: #012840;
 }
 main h3 {
-  font-family: Arial, Helvetica, sans-serif/*"Times New Roman", Times, serif*/;
+  font-family: Arial, Helvetica, sans-serif /*"Times New Roman", Times, serif*/;
   color: #f2790f;
 }
 
 main p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
 
-#passo1{
+#passo1 {
   width: 320px;
 }
 
@@ -84,7 +84,7 @@ main p {
   padding-top: 40px;
   padding-bottom: 20px;
   width: 450px;
-  margin: 90px ;
+  margin: 90px;
   text-align: center;
   display: flex;
   flex-direction: column;

@@ -66,15 +66,15 @@ main {
   padding: 20px;
 }
 main h2 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #012840;
 }
 main p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
 
-video{
+video {
   max-width: 100%;
 }
 
@@ -84,7 +84,6 @@ video{
 }
 
 .video {
-  
   flex: 1;
 }
 

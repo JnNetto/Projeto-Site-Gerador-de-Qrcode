@@ -1,10 +1,4 @@
-function previewFile(event) {
-  let reader = new FileReader();
-  let file = event.target.files[0];
 
-  reader.readAsDataURL(file);
-  reader.onloadend = () => (previewEl.src = reader.result);
-}
 
 const makeVCardVersion = () => `VERSION:3.0`;
 const makeVCardName = (name) => `FN:${name}`;
@@ -27,16 +21,15 @@ ${makeVCardEmail(emailEl.value)}
 ${makeVCardTimeStamp()}
 END:VCARD`;
 
-  // Cria o QR code
   var qrcodeElement = document.getElementById("qrcode");
   qrcodeElement.innerHTML = "";
 
-  var qr = qrcode(0, "H");
+  var qr = qrcode(0, "L");
   qr.addData(vcard);
   qr.make();
 
-  qrcodeElement.innerHTML = qr.createImgTag(3);
+  qrcodeElement.innerHTML = qr.createImgTag(4, 10);
 }
 
 downloadEl.addEventListener("click", makeVCardQRCode);
-fileEl.addEventListener("change", previewFile);
+

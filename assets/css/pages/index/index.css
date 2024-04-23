@@ -64,20 +64,43 @@ main {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   box-shadow: 4px 4px 4px black;
 }
+
+div {
+  flex: 1; /* Faz cada div ocupar o mesmo espaço disponível */
+  margin: 5px; /* Adiciona uma margem entre as divs (opcional) */
+}
+
+
 main.titulo {
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
-  color: var(--cor2);
 }
 main.explicacao {
   font-family: Arial, Helvetica, sans-serif;
   text-align: right;
   color: var(--cor2);
+  
+}
+
+main h1{
+  color: #012840;
+}
+#titulo{
+  display: flex;
+  justify-content: center;
+
+}
+
+#explicacao{
+  display: flex;
+  justify-content: center;
+  margin-right: 50px
 }
 
 section.quadros {

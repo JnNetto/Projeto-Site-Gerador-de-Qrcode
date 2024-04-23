@@ -76,31 +76,18 @@ div {
   margin: 5px; /* Adiciona uma margem entre as divs (opcional) */
 }
 
-
-main.titulo {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-}
-main.explicacao {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: right;
-  color: var(--cor2);
-  
-}
-
-main h1{
+main h1 {
   color: #012840;
 }
-#titulo{
+#titulo {
   display: flex;
   justify-content: center;
-
 }
 
-#explicacao{
+#explicacao {
   display: flex;
   justify-content: center;
-  margin-right: 50px
+  margin-right: 50px;
 }
 
 section.quadros {

@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code de Configuração Wi-Fi</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
+    <link rel="stylesheet" href="../../assets/css/pages/wifi/wifi.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/global/free-qr-code-1851030-1569017.webp"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QR Code de Configuração Wi-Fi</title>
-  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator/qrcode.js"></script>
-  <link rel="stylesheet" href="../../assets/css/pages/wifi/wifi.css" />
-  <link rel="shortcut icon" href="./assets/img/global/free-qr-code-1851030-1569017.webp" type="image/x-icon" />
-</head>
+  <body>
+    <header>
+      <h2>QRConnect</h2>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <h2>QRConnect</h2>
-    <nav>
-      <ul>
-        <li><a href="../../index.html">Home</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="subBody">
-    <main>
-      <div class="content">
-        <div class="text">
-          <h2>Instruções</h2>
-          <h3>Passo 1</h3>
-          <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
-          <p>Digite o nome da rede</p>
-          <h3>Passo 2</h3>
-          <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
-          <p>Digite a senha</p>
-          <h3>Passo 3</h3>
-          <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
-          <p>Selecione o tipo de criptografia</p>
-          <h3>Passo 4</h3>
-          <img src="exemplo-imagem.jpg" alt="Imagem de Exemplo" />
-          <p>Clique no botão "Gerar QR Code" e escaneie o Qr Code.</p>
+    <section id="subBody">
+      <main>
+        <div class="content">
+          <div class="text">
+            <h2>Instruções</h2>
+            <h3>Passo 1</h3>
+            <img src="../img/wifi/passo1.png" alt="Imagem passo 1" />
+            <p>Digite o nome da rede</p>
+            <h3>Passo 2</h3>
+            <img src="../img/wifi/passo2.png" alt="Imagem passo 2" />
+            <p>Digite a senha</p>
+          </div>
         </div>
-      </div>
-    </main>
-    <fieldset id="container">
-      <h2>Configuração de Rede Wi-Fi</h2>
-      <div>
-        <label for="ssid">SSID (nome da rede):</label>
-        <input type="text" id="ssid" />
-      </div>
-      <div>
-        <label for="password">Senha:</label>
-        <input type="password" id="password" />
-      </div>
-      <div>
-        <label for="encryption">Tipo de criptografia:</label>
-        <select id="encryption">
-          <option value="WPA">WPA</option>
-          <option value="WEP">WEP</option>
-          <option value="nopass">Sem senha (aberta)</option>
-        </select>
-      </div>
-      <button id="generateQR">Gerar QR Code</button>
-      <div id="qrcode"></div>
-    </fieldset>
-  </section>
+      </main>
+      <fieldset id="container">
+        <h2>Configuração de Rede Wi-Fi</h2>
+        <div>
+          <label for="ssid">SSID (nome da rede):</label>
+          <input type="text" id="ssid" />
+        </div>
+        <div>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" />
+        </div>
+        <div>
+          <label for="encryption">Tipo de criptografia:</label>
+          <select id="encryption">
+            <option value="WPA">WPA</option>
+            <option value="WEP">WEP</option>
+            <option value="nopass">Sem senha (aberta)</option>
+          </select>
+        </div>
+        <button id="generateQR">Gerar QR Code</button>
+        <div id="qrcode"></div>
+      </fieldset>
+    </section>
 
-  <script src="../../assets/js/wifi/wifi.js"></script>
-</body>
-
+    <script src="../../assets/js/wifi/wifi.js"></script>
+  </body>
 </html>

@@ -1,5 +1,4 @@
 
-
 const makeVCardVersion = () => `VERSION:3.0`;
 const makeVCardName = (name) => `FN:${name}`;
 const makeVCardOrg = (org) => `ORG:${org}`;

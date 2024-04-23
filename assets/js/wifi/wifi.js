@@ -5,7 +5,6 @@ document.getElementById('generateQR').addEventListener('click', function() {
 
     var wifiConfig = `WIFI:S:${ssid};T:${encryption};P:${password};;`;
 
-    // Cria o QR code
     var qrcodeElement = document.getElementById("qrcode");
     qrcodeElement.innerHTML = "";
 

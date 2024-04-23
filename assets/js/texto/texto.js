@@ -1,7 +1,6 @@
 document.getElementById('generateQR').addEventListener('click', function() {
     var text = document.getElementById('textInput').value;
 
-    // Cria o QR code
     var qrcodeElement = document.getElementById("qrcode");
     qrcodeElement.innerHTML = "";
 

@@ -15,7 +15,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #bbbbbb;
 }
 
 #subBody {
@@ -73,7 +73,8 @@ main p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
 }
-video {
+
+video{
   max-width: 100%;
 }
 
@@ -83,6 +84,7 @@ video {
 }
 
 .video {
+  
   flex: 1;
 }
 
@@ -97,4 +99,19 @@ video {
   margin-top: 100px;
   display: block;
   margin-left: 25px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--cor2);
+  color: var(--cor7);
+  text-align: center;
+  padding: 5px;
+}
+
+footer p {
+  margin: 0;
 }

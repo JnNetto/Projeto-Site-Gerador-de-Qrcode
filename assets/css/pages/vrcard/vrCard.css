@@ -13,7 +13,7 @@
 }
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #bbbbbb;
   margin: 0;
   padding: 0;
 }
@@ -73,8 +73,8 @@ main p {
   color: black;
 }
 
-#passos1{
-  width: 70px;
+#passo1{
+  width: 250px;
 }
 
 .content {
@@ -132,4 +132,19 @@ button:hover {
   margin-left: 50px;
   display: block;
   text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--cor2);
+  color: var(--cor7);
+  text-align: center;
+  padding: 5px;
+}
+
+footer p {
+  margin: 0;
 }

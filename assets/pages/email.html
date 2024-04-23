@@ -19,16 +19,28 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <div class="Gerador">
-      <h2>Gerador de QR Code para E-mail</h2>
-      <label for="inputEmail">Insira o e-mail de destino:</label>
-      <input type="email" id="inputEmail" placeholder="example@gmail.com" />
-      <button id="generateQR">Gerar QR Code</button>
-      <div id="qrcode"></div>
-    </div>
-  </main>
-
+    <section id="tudo">  
+      <div class="audio">
+        <h2>Instruções</h2>
+        <audio controls>
+          <source src="../audio/email/audio-email.mp3" type="audio/mp3" />
+          Seu navegador não suporta vídeos HTML5.
+        </audio>
+      </div>   
+      <main>
+      <div class="Gerador">
+        <h2>Gerador de QR Code para E-mail</h2>
+        <label for="inputEmail">Insira o e-mail de destino:</label>
+        <input type="email" id="inputEmail" placeholder="example@gmail.com" />
+        <button id="generateQR">Gerar QR Code</button>
+        <div id="qrcode"></div>
+      </div>
+    </main>
+    </section>
+ 
+    <footer>
+      <p>© 2024 QRConnect</p>
+    </footer>
   <script src="../../assets/js/email/email.js"></script>
 </body>
 

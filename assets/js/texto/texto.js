@@ -9,5 +9,5 @@ document.getElementById('generateQR').addEventListener('click', function() {
     qr.addData(text);
     qr.make();
 
-    qrcodeElement.innerHTML = qr.createImgTag(10);
+    qrcodeElement.innerHTML = qr.createImgTag(3);
 });

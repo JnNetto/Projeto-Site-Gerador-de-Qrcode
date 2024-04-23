@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: var(#ffffff);
+  background-color: #bbbbbb;
 }
 
 #subBody {
@@ -75,8 +75,7 @@ main p {
 }
 
 #passo1 {
-  height: 450px;
-  width: 550px;
+  height: 250px;
 }
 
 .content {
@@ -99,7 +98,7 @@ main p {
   padding: 20px;
   border-radius: 10px;
   width: 300px;
-  height: 500px;
+  height: 500px auto;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -147,4 +146,19 @@ button:hover {
   margin-top: 20px;
   display: block;
   text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--cor2);
+  color: var(--cor7);
+  text-align: center;
+  padding: 5px;
+}
+
+footer p {
+  margin: 0;
 }
